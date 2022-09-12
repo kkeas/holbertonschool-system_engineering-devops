@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #this question writes Best School ten times with an until loop
 i=0
-until [ 10 -lt $i ]
+until [ $i -ge 10 ]
 do
       echo "Best School"
       ((i++))
