@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#this question writes Best School ten times with an until loop
+i=0
+until (( i < 10 ))
+      echo "Best School"
+      ((i++))
+done
