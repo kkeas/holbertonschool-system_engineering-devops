@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#this project is to display files
+list=$(ls)
+for content in $list
+do
+	echo "$content" | cut -d "-" -f2
