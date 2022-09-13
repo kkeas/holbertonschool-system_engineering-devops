@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Display info about the school file
 FILE="School"
 if [ -e "$FILE" ]
 then
