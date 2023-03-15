@@ -14,12 +14,7 @@ printf %s "server {
     root    /etc/nginx/html;
     index   index.html;
     location /redirect_me {
-        return 301 http://bettysbuffaloes.tech/;
-    }
-    error_page 404 /404.html;
-    location /404 {
-      root /etc/nginx/html;
-      internal;
-    }
-}" > /etc/nginx/sites-available/default
+        return 301 http://cookedcat.tech;
+    }"
+sed -i "/listen 80 default_server;/ a error_page 404 /404.html;" /etc/nginx/sites-available/default
 service nginx restart
